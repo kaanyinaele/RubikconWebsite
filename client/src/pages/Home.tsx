@@ -54,7 +54,7 @@ export default function Home() {
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
               Empowering businesses and individuals with scalable Web3 solutions for global impact
             </p>
-            <Button className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform">
+            <Button className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-8 py-4 rounded-lg font-semibold text-lg btn-hover-scale btn-gradient-hover btn-glow-hover">
               Get Started
             </Button>
           </div>
@@ -174,7 +174,7 @@ export default function Home() {
               <h2 className="text-4xl font-bold mb-4">Blog - Understanding Blockchain</h2>
               <p className="text-gray-600">Read how we want to see more people buy understand blockchain, smart contracts and how they affect emerging markets.</p>
             </div>
-            <Button className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+            <Button className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors btn-hover-scale">
               Read More
             </Button>
           </div>
@@ -218,7 +218,7 @@ export default function Home() {
                 of this technology to change, impact and influence our everyday lives and work.
               </p>
               <Link href="/projects">
-                <Button className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+                <Button className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors btn-hover-scale">
                   Learn More
                 </Button>
               </Link>

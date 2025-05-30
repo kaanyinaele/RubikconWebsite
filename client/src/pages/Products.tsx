@@ -27,10 +27,10 @@ export default function Products() {
                 biases, allowing employers to assess candidates purely on merit.
               </p>
               <div className="flex space-x-4">
-                <Button className="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition-colors">
+                <Button className="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition-colors btn-hover-scale">
                   MAIN FEATURE INFO
                 </Button>
-                <Button variant="outline" className="border-2 border-green-500 text-green-500 px-6 py-3 rounded-lg hover:bg-green-50 transition-colors">
+                <Button variant="outline" className="border-2 border-green-500 text-green-500 px-6 py-3 rounded-lg hover:bg-green-50 transition-colors btn-hover-scale">
                   FRONT FEATURE FEED
                 </Button>
               </div>
@@ -63,7 +63,7 @@ export default function Products() {
                 both new and blockchain player experience. We have a variety of both physical 
                 games and online games.
               </p>
-              <Button className="bg-yellow-500 text-black px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
+              <Button className="bg-yellow-500 text-black px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors btn-hover-scale btn-gradient-hover btn-glow-hover">
                 Visit Game Shop →
               </Button>
             </div>
@@ -87,7 +87,7 @@ export default function Products() {
             technical & management team - all while ensuring business goals are met
           </p>
           <Link href="/contact">
-            <Button className="bg-black text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
+            <Button className="bg-black text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transition-colors btn-hover-scale">
               Contact Us
             </Button>
           </Link>

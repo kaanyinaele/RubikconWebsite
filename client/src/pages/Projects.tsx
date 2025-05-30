@@ -97,7 +97,7 @@ export default function Projects() {
                 forward alongside other inspiring tech professionals connecting their career and 
                 impact alongside other creating business goals and team.
               </p>
-              <Button className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+              <Button className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors btn-hover-scale">
                 MORE PROJECT LINKS
               </Button>
             </div>
@@ -114,7 +114,7 @@ export default function Projects() {
             achievable & events. Let's turn your vision to reality.
           </p>
           <Link href="/contact">
-            <Button className="bg-black text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
+            <Button className="bg-black text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transition-colors btn-hover-scale">
               Contact Us
             </Button>
           </Link>
