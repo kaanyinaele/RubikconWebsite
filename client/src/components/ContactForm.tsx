@@ -92,7 +92,7 @@ export function ContactForm() {
         <Button
           type="submit"
           disabled={submitContact.isPending}
-          className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-transform flex items-center space-x-2"
+          className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-8 py-3 rounded-lg font-semibold btn-hover-scale btn-gradient-hover btn-glow-hover flex items-center space-x-2"
         >
           <span>{submitContact.isPending ? "Sending..." : "Send"}</span>
           <ArrowRight size={16} />
