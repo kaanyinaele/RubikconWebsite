@@ -62,71 +62,71 @@ export default function Home() {
       </div>
 
       {/* What We Do Section */}
-      <div className="py-20 bg-gray-100 text-black">
+      <div className="py-20 bg-white text-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">What we do</h2>
-            <p className="text-gray-600">Solve problems and leverage technologies as pioneers in our space using cutting-edge technologies</p>
+            <p className="text-gray-600 max-w-3xl mx-auto">Solve problems and leverage technologies as pioneers in our space using cutting-edge technologies</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="bg-yellow-50 border-none">
-              <CardContent className="p-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="bg-gradient-to-br from-yellow-50 to-orange-50 border border-yellow-200 hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-6">
                 <div className="mb-4">
-                  <Rocket className="h-8 w-8 text-yellow-600" />
+                  <Rocket className="h-6 w-6 text-yellow-600" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Product Development</h3>
-                <p className="text-gray-600">Custom blockchain solutions and Web3 applications tailored to your business needs.</p>
+                <h3 className="text-lg font-semibold mb-3">Product Development</h3>
+                <p className="text-gray-600 text-sm">Custom blockchain solutions and Web3 applications tailored to your business needs.</p>
               </CardContent>
             </Card>
 
-            <Card className="bg-yellow-50 border-none">
-              <CardContent className="p-8">
+            <Card className="bg-gradient-to-br from-yellow-50 to-orange-50 border border-yellow-200 hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-6">
                 <div className="mb-4">
-                  <Users className="h-8 w-8 text-yellow-600" />
+                  <Users className="h-6 w-6 text-yellow-600" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Team Integration</h3>
-                <p className="text-gray-600">Seamless integration with your existing team and development processes.</p>
+                <h3 className="text-lg font-semibold mb-3">Team Integration</h3>
+                <p className="text-gray-600 text-sm">Seamless integration with your existing team and development processes.</p>
               </CardContent>
             </Card>
 
-            <Card className="bg-yellow-50 border-none">
-              <CardContent className="p-8">
+            <Card className="bg-gradient-to-br from-yellow-50 to-orange-50 border border-yellow-200 hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-6">
                 <div className="mb-4">
-                  <Settings className="h-8 w-8 text-yellow-600" />
+                  <Settings className="h-6 w-6 text-yellow-600" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Consulting Services</h3>
-                <p className="text-gray-600">Expert guidance on blockchain implementation and Web3 strategy.</p>
+                <h3 className="text-lg font-semibold mb-3">Consulting Services</h3>
+                <p className="text-gray-600 text-sm">Expert guidance on blockchain implementation and Web3 strategy.</p>
               </CardContent>
             </Card>
 
-            <Card className="bg-yellow-50 border-none">
-              <CardContent className="p-8">
+            <Card className="bg-gradient-to-br from-yellow-50 to-orange-50 border border-yellow-200 hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-6">
                 <div className="mb-4">
-                  <Shield className="h-8 w-8 text-yellow-600" />
+                  <Shield className="h-6 w-6 text-yellow-600" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Smart Contracts</h3>
-                <p className="text-gray-600">Secure and efficient smart contract development and auditing.</p>
+                <h3 className="text-lg font-semibold mb-3">Smart Contracts</h3>
+                <p className="text-gray-600 text-sm">Secure and efficient smart contract development and auditing.</p>
               </CardContent>
             </Card>
 
-            <Card className="bg-yellow-50 border-none">
-              <CardContent className="p-8">
+            <Card className="bg-gradient-to-br from-yellow-50 to-orange-50 border border-yellow-200 hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-6">
                 <div className="mb-4">
-                  <GraduationCap className="h-8 w-8 text-yellow-600" />
+                  <GraduationCap className="h-6 w-6 text-yellow-600" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Educational Training</h3>
-                <p className="text-gray-600">Comprehensive training programs for blockchain and Web3 technologies.</p>
+                <h3 className="text-lg font-semibold mb-3">Educational Training</h3>
+                <p className="text-gray-600 text-sm">Comprehensive training programs for blockchain and Web3 technologies.</p>
               </CardContent>
             </Card>
 
-            <Card className="bg-yellow-50 border-none">
-              <CardContent className="p-8">
+            <Card className="bg-gradient-to-br from-yellow-50 to-orange-50 border border-yellow-200 hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-6">
                 <div className="mb-4">
-                  <Gamepad2 className="h-8 w-8 text-yellow-600" />
+                  <Gamepad2 className="h-6 w-6 text-yellow-600" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Gaming Solutions</h3>
-                <p className="text-gray-600">Innovative blockchain gaming platforms and NFT marketplaces.</p>
+                <h3 className="text-lg font-semibold mb-3">Gaming Solutions</h3>
+                <p className="text-gray-600 text-sm">Innovative blockchain gaming platforms and NFT marketplaces.</p>
               </CardContent>
             </Card>
           </div>
@@ -134,34 +134,26 @@ export default function Home() {
       </div>
 
       {/* Partners Section */}
-      <div className="py-20 bg-gray-200 text-black">
+      <div className="py-20 bg-gradient-to-br from-gray-50 to-gray-100 text-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Our Partners</h2>
             <p className="text-gray-600">We pride ourselves in making partnerships and among partners</p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-            <Card className="bg-white border-none">
-              <CardContent className="p-8 text-center">
-                <h3 className="font-semibold text-lg">BLOCKCHAIN</h3>
-              </CardContent>
-            </Card>
-            <Card className="bg-white border-none">
-              <CardContent className="p-8 text-center">
-                <h3 className="font-semibold text-lg">COMPANIES</h3>
-              </CardContent>
-            </Card>
-            <Card className="bg-white border-none">
-              <CardContent className="p-8 text-center">
-                <h3 className="font-semibold text-lg">FOUNDATIONS</h3>
-              </CardContent>
-            </Card>
-            <Card className="bg-white border-none">
-              <CardContent className="p-8 text-center">
-                <h3 className="font-semibold text-lg">PROTOCOLS</h3>
-              </CardContent>
-            </Card>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
+            <div className="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-all duration-300">
+              <h3 className="font-bold text-lg text-gray-800 tracking-wide">BLOCKCHAIN</h3>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-all duration-300">
+              <h3 className="font-bold text-lg text-gray-800 tracking-wide">COMPANIES</h3>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-all duration-300">
+              <h3 className="font-bold text-lg text-gray-800 tracking-wide">FOUNDATIONS</h3>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-all duration-300">
+              <h3 className="font-bold text-lg text-gray-800 tracking-wide">PROTOCOLS</h3>
+            </div>
           </div>
         </div>
       </div>
