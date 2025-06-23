@@ -1,104 +1,94 @@
-import { HeroSection } from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import hero2 from '@/assets/images/hero-2.jpg';
+import blog1 from '@/assets/images/blog1.png';
+import blog2 from '@/assets/images/blog2.png';
+import blog3 from '@/assets/images/blog3.jpg';
 
 export default function Projects() {
   return (
-    <div>
-      <HeroSection 
-        title="Projects"
-        subtitle="Explore who we are and what we represent at Rubikcon"
-      />
+    <div className="bg-white">
+      {/* Hero Section */}
+      <div
+        className="projects-hero text-white py-40 px-4 sm:px-6 lg:px-8"
+        style={{ backgroundImage: `url(${hero2})` }}
+      >
+        <div className="max-w-7xl mx-auto text-left">
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">Projects</h1>
+          <p className="text-lg md:text-xl max-w-2xl">
+            Explore who we are and what we represent at Rubikcon.
+          </p>
+        </div>
+      </div>
 
-      {/* Solo Trainings Section */}
-      <div className="py-20 bg-white text-black">
+      {/* Solo Trainings & Community Outreach */}
+      <div className="py-20 project-section-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <img 
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
-                alt="Training session" 
-                className="rounded-xl shadow-lg w-full"
-              />
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="flex space-x-4">
+              <img src={blog1} alt="AMA Session" className="rounded-lg shadow-lg w-1/2 object-cover"/>
+              <img src={blog2} alt="Future of DeFi" className="rounded-lg shadow-lg w-1/2 object-cover mt-8"/>
             </div>
-            
-            <div>
-              <div className="mb-4">
-                <span className="text-blue-600 font-semibold">SKILL DEVELOPMENT</span>
+            <div className="text-gray-800">
+              <span className="project-pill-blue">AMA Session</span>
+              <h2 className="text-4xl font-bold my-4">Solo Trainings & Community Outreach</h2>
+              <p className="text-gray-600 mb-4">
+                We believe success in Web3 isn't just about technology, it's about people. That's why the our community is here to learn, build, and grow together. We bridge the gap between complex blockchain innovations and real-world adoption.
+              </p>
+              <div className="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 rounded-md">
+                <p>
+                  We host regular <span className="font-bold">AMA Sessions</span> with both our in-house team and industry experts. Our internal AMAs explore Rubikcon's vision, the challenges of web3 adoption and strategies for a decentralized future. We have also hosted talks with external experts including the <span className="font-bold">Future of DEFI in Africa</span> covering how DEFI can empower the unbanked and its legal barriers.
+                </p>
               </div>
-              <h2 className="text-4xl font-bold mb-6">Solo Trainings & Community Outreach</h2>
-              <p className="text-gray-600 mb-6">
-                These are opportunities we offer to bring our community to have in-school, events and grow together. We bridge the 
-                gap for our community in how to onboard and train enterprise-level professionals.
-              </p>
-              <p className="text-gray-600 mb-8">
-                We have regular Web3 Sessions with Guru in-house team and industry 
-                leaders who stanced blockchain challenges using the strategies of 
-                world-class labs and entrepreneurs and will personal strategy.
-              </p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Partnerships Training Section */}
-      <div className="py-20 bg-yellow-50 text-black">
+      {/* Partnerships Training & Events */}
+      <div className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
-            <span className="bg-yellow-200 text-yellow-800 px-4 py-2 rounded-full text-sm font-semibold">
-              Commitment with WIN-WIN Partnership
-            </span>
-          </div>
-
-          <h2 className="text-4xl font-bold mb-12">Partnerships Training & Development</h2>
-
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-gray-600 mb-6">
-                We deliver organized blockchain education with partners like TechSub 
-                and FinTech communities, to establish expertise-LIVE strategy plus 
-                empowerment program, like provided ARM Accountability challenge and 
-                our financial discussions/impact.
+              <span className="project-pill-yellow">Collaborations with Web3 Organizations</span>
+              <h2 className="text-4xl font-bold my-4">Partnerships Training & Events</h2>
+            </div>
+            <div className="text-gray-600">
+              <p>
+                We deliver targeted blockchain education with partners like HerDAO, Starknet, and Web3Commpass. Our initiatives include the Women in Web3 empowerment program, the structured 100DaysOfSolidity challenge and the Starknet Basecamp Africa.
               </p>
             </div>
-            
-            <div className="grid grid-cols-2 gap-4">
-              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Tech education" className="rounded-lg" />
-              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Workshop" className="rounded-lg" />
-              <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Conference" className="rounded-lg" />
-              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Professional development" className="rounded-lg" />
-            </div>
+          </div>
+          <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <img src={blog1} alt="Event 1" className="rounded-lg shadow-md w-full h-48 object-cover"/>
+            <img src={blog2} alt="Event 2" className="rounded-lg shadow-md w-full h-48 object-cover"/>
+            <img src={blog3} alt="Event 3" className="rounded-lg shadow-md w-full h-48 object-cover"/>
+            <img src={blog1} alt="Event 4" className="rounded-lg shadow-md w-full h-48 object-cover"/>
+            <img src={blog2} alt="Event 5" className="rounded-lg shadow-md w-full h-48 object-cover"/>
+            <img src={blog3} alt="Event 6" className="rounded-lg shadow-md w-full h-48 object-cover"/>
           </div>
         </div>
       </div>
 
-      {/* Sponsorships Section */}
-      <div className="py-20 bg-white text-black">
+      {/* Sponsorships - Devcon Highlights */}
+      <div className="py-20 project-section-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="grid grid-cols-2 gap-4">
-              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Conference event" className="rounded-lg" />
-              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Tech meetup" className="rounded-lg" />
+                <img src={blog1} alt="Devcon 1" className="rounded-lg shadow-lg"/>
+                <img src={blog2} alt="Devcon 2" className="rounded-lg shadow-lg"/>
+                <img src={blog3} alt="Devcon 3" className="rounded-lg shadow-lg col-span-2"/>
             </div>
-            
-            <div>
-              <div className="mb-4">
-                <span className="text-pink-600 font-semibold">Sponsorships - Devcon Highlights</span>
-              </div>
+            <div className="text-gray-800">
+              <span className="project-pill-pink">Sponsorships - Devcon Highlights</span>
+              <p className="text-gray-600 my-4">
+                Devcon At Your Doorstep brought together leading Ethereum experts to share insights and strategies for thriving in the Web3 space. Hosted by the Rubikcon Team, the event featured real-world use cases, and speakers who discussed Devcon's significance in the global web3 ecosystem.
+              </p>
               <p className="text-gray-600 mb-6">
-                Discover in Year Devening throughout together seeking Blockchain talents in Africa. 
-                Inspiring and enhances the sharing great value from hosting the blockchain 
-                Team. Our event featured several speakers, including one Co-founder, Opinions 
-                who discussed Devcon3 hybrid in the global event ecosystem.
+                Additionally, Laisha Wadhwa, creator of Radarr, broke down Ethereum's ecosystem, while Mason Horloza, guided attendees on making real-world impact alongside other inspiring speakers.
               </p>
-              <p className="text-gray-600 mb-8">
-                Highlights from the gathering feature-tech of blockchain community, new 
-                ecosystems, white talents becomes, guided interviews on moving away quick 
-                forward alongside other inspiring tech professionals connecting their career and 
-                impact alongside other creating business goals and team.
-              </p>
-              <Button className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors btn-hover-scale">
-                MORE PROJECT LINKS
+              <Button className="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-colors font-semibold">
+                Watch YouTube Live
               </Button>
             </div>
           </div>
@@ -106,15 +96,14 @@ export default function Projects() {
       </div>
 
       {/* Call to Action */}
-      <div className="py-20 bg-gray-200 text-black">
+      <div className="py-20 bg-gray-800 text-white cta-section-projects">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Want to Onboard Talents or Launch your Project?</h2>
-          <p className="text-gray-600 mb-8">
-            We handle recruitment, training, compliance, and community growth with 
-            achievable & events. Let's turn your vision to reality.
+          <h2 className="text-4xl font-bold mb-4 text-yellow-400">Want to Onboard Talents or Launch your Project?</h2>
+          <p className="text-gray-300 mb-8">
+            We handle recruitment, training, compliance, and community growth with outreaches & events. Let's turn your vision to reality.
           </p>
           <Link href="/contact">
-            <Button className="bg-black text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transition-colors btn-hover-scale">
+            <Button className="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
               Contact Us
             </Button>
           </Link>

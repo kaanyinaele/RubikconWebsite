@@ -1,6 +1,7 @@
 import { Link, useLocation } from "wouter";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/images/logo.png";
 
 export function Navigation() {
   const [location] = useLocation();
@@ -20,14 +21,12 @@ export function Navigation() {
   };
 
   return (
-    <nav className="bg-black/90 backdrop-blur-sm fixed w-full z-50 top-8">
+    <nav className="bg-black/90 backdrop-blur-sm w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center">
-              <div className="w-4 h-4 bg-black rounded-sm"></div>
-            </div>
-            <span className="text-xl font-bold">Rubikcon</span>
+            <img src={logo} alt="Logo" className="w-12 h-12" />
+            <span className="text-xl font-bold">Rubik<span className="text-yellow-400">con</span></span>
           </Link>
 
           {/* Desktop Navigation */}

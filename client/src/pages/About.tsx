@@ -1,44 +1,52 @@
-import { HeroSection } from "@/components/HeroSection";
+import representationImg from "../assets/images/hero-2.jpg";
+import communityImg1 from "../assets/images/blog1.png";
+import communityImg2 from "../assets/images/blog2.png";
 
 export default function About() {
   return (
-    <div>
-      <HeroSection 
-        title="About Us"
-        subtitle="Explore who we are and what we represent at Rubikcon"
-      />
+    <div className="text-black">
+      {/* Hero Section */}
+      <div className="relative about-hero py-40 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto relative z-10">
+          <h1 className="text-5xl md:text-7xl font-bold">About Us</h1>
+          <p className="mt-4 text-xl text-gray-300">
+            Explore who we are and what we represent at Rubikcon
+          </p>
+        </div>
+        <div className="about-hero-bg-text">
+          <span className="tracking-[2rem]">RUBK</span>
+        </div>
+      </div>
 
       {/* Who We Are Section */}
-      <div className="py-20 bg-white text-black">
+      <div className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="mb-8">
-                <span className="text-yellow-600 font-semibold">Who We Are (Our Representation)</span>
-              </div>
-              
-              <div className="space-y-6">
+              <h2 className="text-3xl font-bold mb-4">Who We Are (Our Representation)</h2>
+              <p className="text-gray-600 mb-8">
+                Rubikcon Nexus exists to bridge the gap between traditional enterprises and the decentralized future. We provide expert consulting, strategic onboarding and execution-driven solutions to help companies innovate, adapt and lead in the Web3 ecosystem.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="font-semibold text-lg mb-2">The Vision</h3>
-                  <p className="text-gray-600">
-                    To accelerate the global adoption of latest by empowering businesses and individuals with scalable enterprise and blockchain protocols.
+                  <span className="vision-mission-pill">The Vision</span>
+                  <p className="text-gray-600 mt-2">
+                    To accelerate the global adoption of web3 by empowering businesses and individuals with scalable solutions and trainings
                   </p>
                 </div>
-                
                 <div>
-                  <h3 className="font-semibold text-lg mb-2">Our Mission</h3>
-                  <p className="text-gray-600">
-                    By Positively talent, optimizing blockchain adoption, and delivering comprehensive solution; the ecosystem is empowered to turn Web/Web 3.0 and the emerging infrastructure.
+                  <span className="vision-mission-pill">Our Mission</span>
+                  <p className="text-gray-600 mt-2">
+                    By fostering talent, optimizing blockchain adoption, and delivering measurable results, we pave the way for sustainable growth in the new digital economy.
                   </p>
                 </div>
               </div>
             </div>
-            
-            <div>
+            <div className="flex justify-center">
               <img 
-                src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
-                alt="Professional speaking at conference" 
-                className="rounded-xl shadow-lg w-full"
+                src={representationImg}
+                alt="Rubikcon representation" 
+                className="rounded-full w-96 h-96 object-cover shadow-2xl"
               />
             </div>
           </div>
@@ -46,78 +54,57 @@ export default function About() {
       </div>
 
       {/* Blueprint Section */}
-      <div className="py-20 bg-gray-100 text-black">
+      <div className="py-20 blueprint-section text-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Our Blueprint for Delivering Impactful Solutions</h2>
-            <p className="text-gray-600">
+            <p className="text-gray-600 max-w-3xl mx-auto">
               At Rubikcon, our end-to-end services transform abstract ideas into real-world impact. Partner with us to 
               shape the future of decentralized innovation.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-yellow-50 p-8 rounded-xl">
-              <h3 className="text-2xl font-bold mb-6 text-center">PROBLEM PROJECTS FACE</h3>
-              <div className="space-y-4">
-                <p className="text-gray-700">
-                  Most Projects brought to tangent and released without Developers
-                </p>
-                <p className="text-gray-700">
-                  No time or equipment to have Developers or organized community management for the project
-                </p>
-                <p className="text-gray-700">
-                  Want a Project (SM) or website they idea want to excel in Africa but don't know where to start
-                </p>
-                <p className="text-gray-700">
-                  Projects get stuck in the planning phase or build products that don't find the way
-                </p>
-              </div>
-            </div>
+          <div className="blueprint-grid">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              <div className="blueprint-header text-center">PROBLEM PROJECTS FACE</div>
+              <div className="blueprint-header text-center">SOLUTION WE BRING</div>
 
-            <div className="bg-yellow-50 p-8 rounded-xl">
-              <h3 className="text-2xl font-bold mb-6 text-center">SOLUTION WE BRING</h3>
-              <div className="space-y-4">
-                <p className="text-gray-700">
-                  We create custom strategies meeting regulatory compliance and development developer onboarding
-                </p>
-                <p className="text-gray-700">
-                  We have Lead Developer dedicated through blockchain training and community building support
-                </p>
-                <p className="text-gray-700">
-                  We transform your goals - from ideation to bring your vision to reality: product launch events, community connected and DAO voice
-                </p>
-                <p className="text-gray-700">
-                  We transform your programs - transforming both professionals and blockchain plans for your client, saying you feedback, service strategic and working at every corner involving complex parts and to team.
-                </p>
+              <div className="blueprint-cell space-y-4 text-gray-700 border-r border-yellow-300">
+                <p>Most Projects struggle to engage and onboard African Developers</p>
+                <p>No time or manpower to hire Developers or organize community engagement for your projects?</p>
+                <p>Have a Project, DAO or startup idea you want to scale in Africa but don't know where to start?</p>
+                <p>Projects get stuck in the Planning phase or build products that don't end up aligning with market demands</p>
+              </div>
+
+              <div className="blueprint-cell space-y-4 text-gray-700">
+                <p>We create custom strategies covering regulatory compliance and streamlined developer onboarding</p>
+                <p>We help scale developer adoption through recruitment, training and community-building support</p>
+                <p>Structured management approach to bring your vision to reality - product launch events, community outreach and lots more</p>
+                <p>We redefine your approach - from training from paperwork to execution, using live feedback, iterative debugging and testing - all while ensuring business goals are met</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Community Team Section */}
-      <div className="py-20 bg-white text-black">
+      {/* Community-driven Team Sections */}
+      <div className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="grid grid-cols-2 gap-4">
-              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Team collaboration" className="rounded-lg" />
-              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Diverse team working" className="rounded-lg" />
+              <img src={communityImg1} alt="Community event 1" className="rounded-lg shadow-lg" />
+              <img src={communityImg2} alt="Community event 2" className="rounded-lg shadow-lg" />
             </div>
-            
             <div>
-              <h2 className="text-4xl font-bold mb-6">Community-driven Team Sections</h2>
+              <h2 className="text-3xl font-bold mb-4">Community-driven Team Sections</h2>
               <p className="text-gray-600 mb-6">
-                Dedicated and diverse teams - specializing in marketing, design, development, 
-                and business that can advance expertise to deploy our Web community for your use.
+                Dedicated and diverse teams - specializing in marketing, design, development, and management. They provide all-around expertise to deliver the best strategies and implementation for businesses and individuals.
               </p>
-              <p className="text-gray-600 mb-8">
-                From concept to launch, we collaborate closely with you to understand 
-                your goals, adapt to challenges, and drive sustainable success. Whether 
-                you need global reach planning, partnership connection for smooth onboarding, 
-                your functional approach guarantees Innovation and efficiency at every 
-                step of your journey.
-              </p>
+              <div className="community-info-box">
+                <p>
+                  From concept to launch, we collaborate closely with you to understand your goals, adapt to challenges, and drive measurable success. Whether you're scaling a startup, refining a brand, or optimizing workflows, our cross-functional approach guarantees innovation and efficiency at every step.
+                </p>
+              </div>
             </div>
           </div>
         </div>

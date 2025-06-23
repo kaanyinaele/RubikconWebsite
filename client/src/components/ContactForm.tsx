@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { insertContactSchema, type InsertContact } from "@shared/schema";
@@ -50,15 +49,15 @@ export function ContactForm() {
   };
 
   return (
-    <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl">
-      <h3 className="text-2xl font-bold mb-6">Let's Get in Touch with You</h3>
+    <div className="contact-form-container p-8 rounded-2xl text-white">
+      <h3 className="text-2xl font-bold mb-8">Let's Get in Touch with You</h3>
       
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
         <div>
           <Input
             {...form.register("name")}
             placeholder="Name"
-            className="w-full bg-transparent border-0 border-b border-gray-500 rounded-none py-3 text-white placeholder-gray-400 focus:border-yellow-400 focus:ring-0"
+            className="w-full bg-transparent border-0 border-b-2 border-gray-600 rounded-none py-3 text-white placeholder-gray-400 focus:border-yellow-300 focus:ring-0 transition-colors duration-300"
           />
           {form.formState.errors.name && (
             <p className="text-red-400 text-sm mt-1">{form.formState.errors.name.message}</p>
@@ -70,7 +69,7 @@ export function ContactForm() {
             {...form.register("email")}
             type="email"
             placeholder="Email Address"
-            className="w-full bg-transparent border-0 border-b border-gray-500 rounded-none py-3 text-white placeholder-gray-400 focus:border-yellow-400 focus:ring-0"
+            className="w-full bg-transparent border-0 border-b-2 border-gray-600 rounded-none py-3 text-white placeholder-gray-400 focus:border-yellow-300 focus:ring-0 transition-colors duration-300"
           />
           {form.formState.errors.email && (
             <p className="text-red-400 text-sm mt-1">{form.formState.errors.email.message}</p>
@@ -81,8 +80,8 @@ export function ContactForm() {
           <Textarea
             {...form.register("message")}
             placeholder="Message (Optional)"
-            rows={4}
-            className="w-full bg-transparent border-0 border-b border-gray-500 rounded-none py-3 text-white placeholder-gray-400 focus:border-yellow-400 focus:ring-0 resize-none"
+            rows={3}
+            className="w-full bg-transparent border-0 border-b-2 border-gray-600 rounded-none py-3 text-white placeholder-gray-400 focus:border-yellow-300 focus:ring-0 resize-none transition-colors duration-300"
           />
           {form.formState.errors.message && (
             <p className="text-red-400 text-sm mt-1">{form.formState.errors.message.message}</p>
@@ -92,7 +91,7 @@ export function ContactForm() {
         <Button
           type="submit"
           disabled={submitContact.isPending}
-          className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-8 py-3 rounded-lg font-semibold btn-hover-scale btn-gradient-hover btn-glow-hover flex items-center space-x-2"
+          className="bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-transform duration-300 ease-in-out transform hover:scale-105 flex items-center space-x-2 w-full justify-center"
         >
           <span>{submitContact.isPending ? "Sending..." : "Send"}</span>
           <ArrowRight size={16} />

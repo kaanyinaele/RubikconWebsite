@@ -1,93 +1,98 @@
-import { HeroSection } from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import heroBg from "../assets/images/hero-1.jpg";
+import blockgigsImg from "../assets/images/blog1.png";
+import gamesImg from "../assets/images/blog2.png";
+import readyToBuildBg from "../assets/images/hero-3.jpg";
 
 export default function Products() {
   return (
-    <div>
-      <HeroSection 
-        title="Products"
-        subtitle="From conceptual ideas to real-world applicable and accessible solutions with technical expertise"
-      />
+    <div className="text-black">
+      {/* Hero Section */}
+      <div 
+        className="products-hero text-white py-40 px-4 sm:px-6 lg:px-8"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      >
+        <div className="max-w-7xl mx-auto text-center">
+          <h1 className="text-5xl md:text-7xl font-bold">Products</h1>
+          <p className="mt-4 text-xl text-gray-200 max-w-3xl mx-auto">
+            From conception to execution, explore our innovative solutions built with technical expertise
+          </p>
+        </div>
+      </div>
 
-      {/* Product Spotlight */}
-      <div className="py-20 bg-gray-100 text-black">
+      {/* Blockgigs Section */}
+      <div className="py-20 product-section-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
-            <span className="bg-yellow-200 text-yellow-800 px-4 py-2 rounded-full text-sm font-semibold">
-              PRODUCT SPOTLIGHT
-            </span>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-gray-600 mb-6">
+                This is a job platform that revolutionizes hiring processes by leveraging web3 technology. It promotes the adoption of stablecoins payments like USDC, USDT, ensuring secure and borderless transactions.
+              </p>
+              <Button asChild className="bg-black text-white rounded-full px-6 py-3 hover:bg-gray-800">
+                <a href="#">Go to Blockgigs →</a>
+              </Button>
+            </div>
+            <div className="text-right">
+              <span className="product-pill product-pill-one">PRODUCT ONE</span>
+              <h2 className="text-4xl font-bold mt-2">Blockgigs - Future of Work on Web3</h2>
+            </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-            <div>
-              <h2 className="text-4xl font-bold mb-6">Blockgigs - Future of Work on Web3</h2>
-              <p className="text-gray-600 mb-8">
-                My focusing on skills instead of just qualifications, this platform diminishes hiring 
-                biases, allowing employers to assess candidates purely on merit.
-              </p>
-              <div className="flex space-x-4">
-                <Button className="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition-colors btn-hover-scale">
-                  MAIN FEATURE INFO
-                </Button>
-                <Button variant="outline" className="border-2 border-green-500 text-green-500 px-6 py-3 rounded-lg hover:bg-green-50 transition-colors btn-hover-scale">
-                  FRONT FEATURE FEED
-                </Button>
+          <div className="grid lg:grid-cols-2 gap-12 items-center mt-16">
+            <div className="flex justify-center">
+              <img src={blockgigsImg} alt="Blockgigs platform" className="rounded-xl shadow-2xl" />
+            </div>
+            <div className="space-y-8">
+              <div>
+                <span className="product-pill product-pill-feature">MAIN FEATURE #ONE</span>
+                <p className="mt-2 text-gray-700">
+                  By focusing on skills-based pseudonym profiles, this platform eliminates hiring biases, allowing employers to assess candidates purely on merit.
+                </p>
+              </div>
+              <div>
+                <span className="product-pill product-pill-feature">MAIN FEATURE #TWO</span>
+                <p className="mt-2 text-gray-700">
+                  Payment challenges (either with-held pays or scam talents) are as well tackled with its milestone-based automated payment system.
+                </p>
               </div>
             </div>
-            
-            <div className="grid grid-cols-2 gap-4">
-              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=250" alt="Freelancer working" className="rounded-lg" />
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=250" alt="Job platform interface" className="rounded-lg" />
-            </div>
-          </div>
-
-          <div className="text-center mb-8">
-            <p className="text-gray-600">
-              Highlight challenges with our current payment system, plus we gain talent with more control 
-              with its milestone-based automated payment system.
-            </p>
           </div>
         </div>
       </div>
 
-      {/* Blockchain Games Section */}
-      <div className="py-20 bg-black text-white">
+      {/* Rubikcon's Games Section */}
+      <div className="py-20 product-section-dark text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-yellow-400">Blockchain Games - The Fun of Web3</h2>
-              <p className="text-gray-300 mb-8">
-                Get a seamless on/off-ramp to rewards innovation in blockchain and engaging 
-                our SmallPOOL complex blockchain concepts. Our games are designed for 
-                both new and blockchain player experience. We have a variety of both physical 
-                games and online games.
+              <span className="product-games-pill">Rubikcon's Games - The Fun of Web3</span>
+              <p className="mt-6 text-gray-300">
+                Our games introduce players to the web3 ecosystem in a fun and engaging way, simplifying complex blockchain concepts. The games are designed for both solo and multi-players experience. We have a variety of both physical (cards) and online games.
               </p>
-              <Button className="bg-yellow-500 text-black px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors btn-hover-scale btn-gradient-hover btn-glow-hover">
-                Visit Game Shop →
+              <Button asChild className="mt-6 bg-yellow-500 text-black rounded-full px-6 py-3 font-semibold hover:bg-yellow-400">
+                <a href="#">Visit Game Shop →</a>
               </Button>
             </div>
-            
-            <div className="grid grid-cols-2 gap-4">
-              <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Gaming interface" className="rounded-lg" />
-              <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Gaming community" className="rounded-lg" />
-              <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="Crypto gaming" className="rounded-lg" />
-              <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" alt="NFT marketplace" className="rounded-lg" />
+            <div className="flex justify-center">
+              <img src={gamesImg} alt="Rubikcon Games" className="rounded-xl shadow-2xl" />
             </div>
           </div>
         </div>
       </div>
 
       {/* Ready to Build Section */}
-      <div className="py-20 bg-gray-200 text-black">
+      <div 
+        className="py-20 ready-to-build-section text-black"
+        style={{ backgroundImage: `url(${readyToBuildBg})` }}
+      >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Build or Refine your Product?</h2>
-          <p className="text-gray-600 mb-8">
-            Rubikcon handles all from placement to execution with our experienced 
-            technical & management team - all while ensuring business goals are met
+          <h2 className="text-4xl font-bold mb-4">Ready to Build or Refine your Product?</h2>
+          <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
+            Rubikcon handles all from paperwork to execution with our experienced technical & management team - all while ensuring business goals are met
           </p>
           <Link href="/contact">
-            <Button className="bg-black text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transition-colors btn-hover-scale">
+            <Button className="bg-black text-white rounded-full px-8 py-3 font-semibold hover:bg-gray-800">
               Contact Us
             </Button>
           </Link>
