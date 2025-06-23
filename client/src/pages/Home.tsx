@@ -131,14 +131,19 @@ export default function Home() {
           </div>
 
           <div className="partners-grid">
-            <div className="grid grid-cols-3">
-              <div className="partners-header">BLOCKCHAIN</div>
-              <div className="partners-header">COMPANIES</div>
-              <div className="partners-header">FOUNDATIONS</div>
-
-              <div className="partners-cell"></div>
-              <div className="partners-cell"></div>
-              <div className="partners-cell"></div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="partners-header font-semibold text-lg tracking-wider">BLOCKCHAIN</div>
+                <div className="partners-cell mt-4 h-24 bg-gray-200/50 rounded-lg"></div>
+              </div>
+              <div className="text-center">
+                <div className="partners-header font-semibold text-lg tracking-wider">COMPANIES</div>
+                <div className="partners-cell mt-4 h-24 bg-gray-200/50 rounded-lg"></div>
+              </div>
+              <div className="text-center">
+                <div className="partners-header font-semibold text-lg tracking-wider">FOUNDATIONS</div>
+                <div className="partners-cell mt-4 h-24 bg-gray-200/50 rounded-lg"></div>
+              </div>
             </div>
           </div>
         </div>
