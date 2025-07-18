@@ -1,4 +1,4 @@
-import representationImg from "../assets/images/hero-2.jpg";
+import representationImg from "../assets/images/about-us-Ozi.jpg";
 import communityImg1 from "../assets/images/blog1.png";
 import communityImg2 from "../assets/images/blog2.png";
 
@@ -30,13 +30,13 @@ export default function About() {
               <div className="grid sm:grid-cols-2 gap-8">
                 <div>
                   <span className="vision-mission-pill">The Vision</span>
-                  <p className="text-gray-600 mt-2">
+                  <p className="text-gray-600 mt-2 text-justify">
                     To accelerate the global adoption of web3 by empowering businesses and individuals with scalable solutions and trainings
                   </p>
                 </div>
                 <div>
                   <span className="vision-mission-pill">Our Mission</span>
-                  <p className="text-gray-600 mt-2">
+                  <p className="text-gray-600 mt-2 text-justify">
                     By fostering talent, optimizing blockchain adoption, and delivering measurable results, we pave the way for sustainable growth in the new digital economy.
                   </p>
                 </div>
@@ -46,7 +46,7 @@ export default function About() {
               <img 
                 src={representationImg}
                 alt="Rubikcon representation" 
-                className="rounded-full w-96 h-96 object-cover shadow-2xl"
+                className="square-full w-200 h-200 object-cover shadow-2xl rounded-tl-full rounded-bl-full"
               />
             </div>
           </div>
@@ -64,23 +64,23 @@ export default function About() {
             </p>
           </div>
 
-          <div className="blueprint-grid">
+          <div className="border border-gray-300 rounded-lg overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2">
-              <div className="blueprint-header text-center">PROBLEM PROJECTS FACE</div>
-              <div className="blueprint-header text-center">SOLUTION WE BRING</div>
+              <div className="bg-[#EAF2D7] p-4 h-24 font-bold border-b border-gray-300 md:border-r flex items-center justify-center">PROBLEM PROJECTS FACE</div>
+              <div className="bg-[#EAF2D7] p-4 h-24 font-bold border-b border-gray-300 flex items-center justify-center">SOLUTION WE BRING</div>
 
-              <div className="blueprint-cell space-y-4 text-gray-700 border-r border-yellow-300">
+              <div className="p-4 space-y-4 text-gray-700 md:border-r border-gray-300">
                 <p>Most Projects struggle to engage and onboard African Developers</p>
-                <p>No time or manpower to hire Developers or organize community engagement for your projects?</p>
+                <p>No time or manpower to train Developers or organize community engagement for your projects?</p>
                 <p>Have a Project, DAO or startup idea you want to scale in Africa but don't know where to start?</p>
                 <p>Projects get stuck in the Planning phase or build products that don't end up aligning with market demands</p>
               </div>
 
-              <div className="blueprint-cell space-y-4 text-gray-700">
+              <div className="p-4 space-y-4 text-gray-700">
                 <p>We create custom strategies covering regulatory compliance and streamlined developer onboarding</p>
                 <p>We help scale developer adoption through recruitment, training and community-building support</p>
                 <p>Structured management approach to bring your vision to reality - product launch events, community outreach and lots more</p>
-                <p>We redefine your approach - from training from paperwork to execution, using live feedback, iterative debugging and testing - all while ensuring business goals are met</p>
+                <p>We redefine your approach - transitioning from paperwork to execution, using live feedback, iterative debugging and testing - all while ensuring business goals are met</p>
               </div>
             </div>
           </div>
@@ -92,8 +92,11 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="grid grid-cols-2 gap-4">
-              <img src={communityImg1} alt="Community event 1" className="rounded-lg shadow-lg" />
-              <img src={communityImg2} alt="Community event 2" className="rounded-lg shadow-lg" />
+              <img src={communityImg1} alt="Community event 1" className="rounded-lg shadow-lg w-full h-full object-cover col-span-1" />
+              <div className="flex flex-col gap-4 col-span-1">
+                <img src={communityImg2} alt="Community event 2" className="rounded-lg shadow-lg w-full h-full object-cover" />
+                <img src={communityImg2} alt="Community event 3" className="rounded-lg shadow-lg w-full h-full object-cover" />
+              </div>
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">Community-driven Team Sections</h2>
