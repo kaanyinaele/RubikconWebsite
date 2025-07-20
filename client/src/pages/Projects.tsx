@@ -69,16 +69,34 @@ export default function Projects() {
               </p>
             </div>
           </div>
-          <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            <img src={Frame1} alt="Event 1" className="rounded-lg shadow-md w-full h-48 object-cover"/>
-            <img src={Frame2} alt="Event 2" className="rounded-lg shadow-md w-full h-48 object-cover"/>
-            <img src={Frame3} alt="Event 3" className="rounded-lg shadow-md w-full h-48 object-cover"/>
-            <img src={Frame4} alt="Event 4" className="rounded-lg shadow-md w-full h-48 object-cover"/>
-            <img src={Frame5} alt="Event 5" className="rounded-lg shadow-md w-full h-48 object-cover"/>
-            <img src={Frame6} alt="Event 6" className="rounded-lg shadow-md w-full h-48 object-cover"/>
-            <img src={Frame7} alt="Event 7" className="rounded-lg shadow-md w-full h-48 object-cover"/>
-          </div>
         </div>
+        <div className="w-screen overflow-hidden relative mt-12 -mx-4 sm:-mx-6 lg:-mx-8">
+          <div className="flex space-x-6 py-4 animate-scroll hover:animation-paused">
+              {/* First set of images */}
+              {[Frame1, Frame2, Frame3, Frame4, Frame5, Frame6, Frame7].map((img, idx) => (
+                <div key={`img-${idx}`} className="flex-shrink-0 w-64 h-48">
+                  <img 
+                    src={img} 
+                    alt={`Event ${idx + 1}`} 
+                    className="rounded-lg shadow-md w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              ))}
+              {/* Duplicate set for seamless looping */}
+              {[Frame1, Frame2, Frame3, Frame4, Frame5, Frame6, Frame7].map((img, idx) => (
+                <div key={`img-dup-${idx}`} className="flex-shrink-0 w-64 h-48">
+                  <img 
+                    src={img} 
+                    alt={`Event ${idx + 1}`} 
+                    className="rounded-lg shadow-md w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+            {/* Gradient fade effect on sides */}
+            <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+            <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+          </div>
       </div>
 
       {/* Sponsorships - Devcon Highlights */}

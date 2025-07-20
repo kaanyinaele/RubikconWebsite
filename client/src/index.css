@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7)); /* Width of one set of images */
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+  width: calc(250px * 14); /* Double the width for seamless looping */
+}
+
+.hover\:animation-paused:hover {
+  animation-play-state: paused;
+}
+
 :root {
   --background: 0 0% 100%;
   --foreground: 20 14.3% 4.1%;

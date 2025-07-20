@@ -238,7 +238,10 @@ export default function Home() {
                 bootcamps, AMA sessions with industry leaders and partnerships
                 aimed at bridging the gap between aspirations and expertise
               </p>
-              <Link href="/projects">
+              <Link href="/projects"
+              className="scroll-to-top"
+              onClick={() => window.scrollTo(0, 0)}
+              >
                 <Button className="bg-black text-white px-6 py-3 rounded-3xl hover:bg-gray-800 transition-colors btn-hover-scale">
                   More about projects
                 </Button>
@@ -281,7 +284,9 @@ export default function Home() {
                 ecosystem in a fun and engaging way, simplifying complex
                 blockchain concepts
               </p>
-              <Link href="/projects">
+              <Link href="/products"
+              className="scroll-to-top"
+              onClick={() => window.scrollTo(0, 0)}>
                 <Button className="bg-black text-white px-6 py-3 rounded-3xl hover:bg-gray-800 transition-colors btn-hover-scale">
                   Go to products
                 </Button>
