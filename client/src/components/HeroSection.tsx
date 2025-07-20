@@ -4,6 +4,7 @@ import hero1 from "@/assets/images/hero-1.jpg";
 import hero2 from "@/assets/images/hero-2.jpg";
 import hero3 from "@/assets/images/hero-3.jpg";
 import hero4 from "@/assets/images/hero-4.jpg";
+import heroWallpaper from "@/assets/images/herowallpaper.png";
 import { useState, useEffect, useRef, useCallback } from "react";
 
 export function HeroSection() {
@@ -20,7 +21,16 @@ export function HeroSection() {
   
 
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden flex justify-center items-center text-white p-4" ref={containerRef}>
+    <div 
+      className="min-h-screen relative overflow-hidden flex justify-center items-center text-white p-4" 
+      ref={containerRef}
+      style={{
+        backgroundImage: `url(${heroWallpaper})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black"></div>
       <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-yellow-400/20 to-transparent blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-cyan-500/20 to-transparent blur-3xl"></div>

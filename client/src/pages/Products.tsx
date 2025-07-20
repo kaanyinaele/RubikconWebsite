@@ -2,9 +2,8 @@ import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import heroBg from "../assets/images/hero-1.jpg";
 import blockgigsImg from "../assets/images/blog1.png";
-
+import HeroBg from "../assets/images/ProductsHero.png"
 import CardGame1 from "../assets/images/CardGame1.webp";
 import CardGame2 from "../assets/images/CardGame2.webp";
 import CardGame3 from "../assets/images/CardGame3.jpg";
@@ -19,7 +18,7 @@ export default function Products() {
       {/* Hero Section */}
       <div 
         className="products-hero text-white py-40 px-4 sm:px-6 lg:px-8"
-        style={{ backgroundImage: `url(${heroBg})` }}
+        style={{ backgroundImage: `url(${HeroBg})` }}
       >
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold">Products</h1>

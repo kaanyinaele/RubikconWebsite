@@ -9,7 +9,7 @@ import Frame4 from "../assets/images/Frame4.png";
 import Frame5 from "../assets/images/Frame5.jpg";
 import Frame6 from "../assets/images/Frame6.jpg";
 import Frame7 from "../assets/images/Frame7.jpg";
-
+import ProjectPageLogo from "../assets/images/projects.png";
 import hero2 from '@/assets/images/hero-2.jpg';
 import blog1 from '@/assets/images/blog1.png';
 import blog2 from '@/assets/images/blog2.png';
@@ -21,7 +21,7 @@ export default function Projects() {
       {/* Hero Section */}
       <div
         className="projects-hero text-white py-40 px-4 sm:px-6 lg:px-8"
-        style={{ backgroundImage: `url(${hero2})` }}
+        style={{ backgroundImage: `url(${ProjectPageLogo})` }}
       >
         <div className="max-w-7xl mx-auto text-left">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">Projects</h1>
