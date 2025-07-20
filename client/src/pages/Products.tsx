@@ -1,11 +1,19 @@
+import * as React from "react"
+import Autoplay from "embla-carousel-autoplay"
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import heroBg from "../assets/images/hero-1.jpg";
 import blockgigsImg from "../assets/images/blog1.png";
-import gamesImg from "../assets/images/blog2.png";
+
+import CardGame1 from "../assets/images/CardGame1.webp";
+import CardGame2 from "../assets/images/CardGame2.webp";
+import CardGame3 from "../assets/images/CardGame3.jpg";
+
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import readyToBuildBg from "../assets/images/hero-3.jpg";
 
 export default function Products() {
+  const gameImages = [CardGame1, CardGame2, CardGame3];
   return (
     <div className="text-black">
       {/* Hero Section */}
@@ -74,8 +82,25 @@ export default function Products() {
                 <a href="#">Visit Game Shop →</a>
               </Button>
             </div>
-            <div className="flex justify-center">
-              <img src={gamesImg} alt="Rubikcon Games" className="rounded-xl shadow-2xl" />
+            <div className="flex justify-center h-64 w-full">
+              <Carousel
+                plugins={[
+                  Autoplay({
+                    delay: 5000,
+                  }),
+                ]}
+                className="w-full max-w-xs"
+              >
+                <CarouselContent>
+                  {gameImages.map((img, index) => (
+                    <CarouselItem key={index}>
+                      <img src={img} alt={`Rubikcon Games ${index + 1}`} className="rounded-xl shadow-2xl" />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
             </div>
           </div>
         </div>

@@ -1,5 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import AMA1 from "../assets/images/AMA1.jpg";
+import AMA2 from "../assets/images/AMA2.jpg";
+import Frame1 from "../assets/images/Frame1.png";
+import Frame2 from "../assets/images/Frame2.png";
+import Frame3 from "../assets/images/Frame3.png"; 
+import Frame4 from "../assets/images/Frame4.png";
+import Frame5 from "../assets/images/Frame5.jpg";
+import Frame6 from "../assets/images/Frame6.jpg";
+import Frame7 from "../assets/images/Frame7.jpg";
+
 import hero2 from '@/assets/images/hero-2.jpg';
 import blog1 from '@/assets/images/blog1.png';
 import blog2 from '@/assets/images/blog2.png';
@@ -25,9 +35,9 @@ export default function Projects() {
       <div className="py-20 project-section-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="flex space-x-4">
-              <img src={blog1} alt="AMA Session" className="rounded-lg shadow-lg w-1/2 object-cover"/>
-              <img src={blog2} alt="Future of DeFi" className="rounded-lg shadow-lg w-1/2 object-cover mt-8"/>
+            <div className="flex space-x-4 ">
+              <img src={AMA1} alt="AMA Session" className="rounded-lg shadow-lg w-1/2 object-cover hover:scale-110 transition-transform"/>
+              <img src={AMA2} alt="Future of DeFi" className="rounded-lg shadow-lg w-1/2 object-cover mt-8 hover:scale-110 transition-transform"/>
             </div>
             <div className="text-gray-800">
               <span className="project-pill-blue">AMA Session</span>
@@ -60,12 +70,13 @@ export default function Projects() {
             </div>
           </div>
           <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            <img src={blog1} alt="Event 1" className="rounded-lg shadow-md w-full h-48 object-cover"/>
-            <img src={blog2} alt="Event 2" className="rounded-lg shadow-md w-full h-48 object-cover"/>
-            <img src={blog3} alt="Event 3" className="rounded-lg shadow-md w-full h-48 object-cover"/>
-            <img src={blog1} alt="Event 4" className="rounded-lg shadow-md w-full h-48 object-cover"/>
-            <img src={blog2} alt="Event 5" className="rounded-lg shadow-md w-full h-48 object-cover"/>
-            <img src={blog3} alt="Event 6" className="rounded-lg shadow-md w-full h-48 object-cover"/>
+            <img src={Frame1} alt="Event 1" className="rounded-lg shadow-md w-full h-48 object-cover"/>
+            <img src={Frame2} alt="Event 2" className="rounded-lg shadow-md w-full h-48 object-cover"/>
+            <img src={Frame3} alt="Event 3" className="rounded-lg shadow-md w-full h-48 object-cover"/>
+            <img src={Frame4} alt="Event 4" className="rounded-lg shadow-md w-full h-48 object-cover"/>
+            <img src={Frame5} alt="Event 5" className="rounded-lg shadow-md w-full h-48 object-cover"/>
+            <img src={Frame6} alt="Event 6" className="rounded-lg shadow-md w-full h-48 object-cover"/>
+            <img src={Frame7} alt="Event 7" className="rounded-lg shadow-md w-full h-48 object-cover"/>
           </div>
         </div>
       </div>

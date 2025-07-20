@@ -1,6 +1,9 @@
 import representationImg from "../assets/images/about-us-Ozi.jpg";
 import communityImg1 from "../assets/images/blog1.png";
 import communityImg2 from "../assets/images/blog2.png";
+import JoyImg from "../assets/images/Joy.png";
+import SoniaImg from "../assets/images/Sonia.jpg";
+import OziImg from "../assets/images/Ozi.jpeg";
 
 export default function About() {
   return (
@@ -92,10 +95,10 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="grid grid-cols-2 gap-4">
-              <img src={communityImg1} alt="Community event 1" className="rounded-lg shadow-lg w-full h-full object-cover col-span-1" />
+              <img src={OziImg} alt="Community event 1" className="rounded-lg shadow-lg w-full h-1/2 object-cover col-span-1 my-auto" />
               <div className="flex flex-col gap-4 col-span-1">
-                <img src={communityImg2} alt="Community event 2" className="rounded-lg shadow-lg w-full h-full object-cover" />
-                <img src={communityImg2} alt="Community event 3" className="rounded-lg shadow-lg w-full h-full object-cover" />
+                <img src={JoyImg} alt="Community event 2" className="rounded-lg shadow-lg w-full h-full object-cover" />
+                <img src={SoniaImg} alt="Community event 3" className="rounded-lg shadow-lg w-full h-full object-cover" />
               </div>
             </div>
             <div>

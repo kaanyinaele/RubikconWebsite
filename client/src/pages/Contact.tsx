@@ -1,7 +1,7 @@
 import { ContactForm } from "@/components/ContactForm";
-import { Button } from "@/components/ui/button";
 import { Phone, Mail, ArrowRight } from "lucide-react";
 import hero3 from '@/assets/images/hero-3.jpg';
+import { BookMeetingModal } from "@/components/BookMeetingModal";
 
 export default function Contact() {
   return (
@@ -58,10 +58,7 @@ export default function Contact() {
           <p className="text-gray-800 text-lg mb-8">
             Other Businesses Scale Successfully
           </p>
-          <Button className="bg-black text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition-colors flex items-center space-x-2 mx-auto">
-            <span>Book a Meeting</span>
-            <ArrowRight size={16} />
-          </Button>
+        <BookMeetingModal />
         </div>
       </div>
     </div>

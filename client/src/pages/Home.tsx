@@ -1,7 +1,11 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import { BookMeetingModal } from "@/components/BookMeetingModal";
 import { Card, CardContent } from "@/components/ui/card";
 import { HeroSection } from "@/components/HeroSection";
+import Founder1 from "@/assets/images/Founder1.jpeg";
+import Founder2 from "@/assets/images/Founder2.jpg";
+import Founder3 from "@/assets/images/Founder3.jpg";
 import hero1 from "@/assets/images/hero-1.jpg";
 import hero2 from "@/assets/images/hero-2.jpg";
 import hero3 from "@/assets/images/hero-3.jpg";
@@ -32,12 +36,7 @@ export default function Home() {
                 Want a 15 minutes demo on how we can elevate your business. Let's
                 talk
               </p>
-              <Button
-                asChild
-                className="mt-4 bg-black text-white hover:bg-gray-800 rounded-lg px-6 py-3 font-semibold"
-              >
-                <Link href="/book-meeting">Book a Meeting &rarr;</Link>
-              </Button>
+              <BookMeetingModal />
             </div>
           </div>
 
@@ -171,24 +170,23 @@ export default function Home() {
                 asChild
                 className="mt-4 bg-black text-white hover:bg-gray-800 rounded-full px-6 py-3 font-semibold"
               >
-                <Link href="/blogs">See More Blogs &rarr;</Link>
+                <a href="https://medium.com/@info.rubiconconsulting" target="_blank" rel="noopener noreferrer">See More Blogs &rarr;</a>
               </Button>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="blog-card">
-              <img src={blog1} alt="Blog 1" />
+              <img src="https://i.postimg.cc/cJXTf5J7/Chat-GPT-Image-Jul-20-2025-01-03-06-PM.png" alt="Blog 1" />
               <div className="blog-card-overlay">
                 <h3 className="text-lg font-semibold mb-3">
-                  From Static Pages to Social Spaces: A Beginner's Guide to the
-                  Web's Evolution
+                Understanding Blockchain Technology: A Comprehensive Overview
                 </h3>
                 <Button
                   asChild
                   className="bg-gray-800/50 text-white hover:bg-gray-700/70 rounded-lg px-4 py-2 text-sm font-semibold"
                 >
-                  <Link href="/blog/1">View Write-up</Link>
+                  <a href="https://medium.com/@info.rubiconconsulting/understanding-blockchain-technology-a-comprehensive-overview-d69cd53d0817" target="_blank" rel="noopener noreferrer">View Write-up</a>
                 </Button>
               </div>
             </div>
@@ -197,30 +195,30 @@ export default function Home() {
               <img src={blog2} alt="Blog 2" />
               <div className="blog-card-overlay">
                 <h3 className="text-lg font-semibold mb-3">
-                  How to Send Tokens from One Chain to Another Using Chainlink
-                  CCIP
+                Chainlink: Connecting Smart Contracts to Onchain Data
                 </h3>
                 <Button
                   asChild
                   className="bg-gray-800/50 text-white hover:bg-gray-700/70 rounded-lg px-4 py-2 text-sm font-semibold"
                 >
-                  <Link href="/blog/2">View Write-up</Link>
+                  <a href="https://medium.com/@info.rubiconconsulting/chainlink-connecting-smart-contracts-to-onchain-data-b81e4168f666" target="_blank" rel="noopener noreferrer">View Write-up</a>
                 </Button>
               </div>
             </div>
 
             <div className="blog-card">
-              <img src={blog3} alt="Blog 3" />
+              <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*rmSUq-VZdLfUzaZGu9uJiQ.jpeg" alt="Blog 3" />
               <div className="blog-card-overlay">
                 <h3 className="text-lg font-semibold mb-3">
-                  Empowering African Youths with Skills for the Future: Join
-                  Rubicon Consults' School of Training
+                Rubicon Consults & MUAccra: Inspiring Africa’s Blockchain Ecosystem
+
+
                 </h3>
                 <Button
                   asChild
                   className="bg-gray-800/50 text-white hover:bg-gray-700/70 rounded-lg px-4 py-2 text-sm font-semibold"
                 >
-                  <Link href="/blog/3">View Write-up</Link>
+                  <a href="https://medium.com/@info.rubiconconsulting/rubicon-consults-muaccra-inspiring-africas-blockchain-ecosystem-9caab221d6d1" target="_blank" rel="noopener noreferrer">View Write-up</a>
                 </Button>
               </div>
             </div>
@@ -323,21 +321,21 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="team-card">
-              <img src={hero1} alt="Ozioma Onukogu" />
-              <div className="team-card-content">
+              <img src={Founder1} alt="Ozioma Onukogu" />
+              <div className="team-card-content ">
                 <h3 className="font-bold text-lg">OZIOMA ONUKOGU</h3>
                 <p className="text-gray-600">CEO - Chief Executive Officer</p>
               </div>
             </div>
             <div className="team-card">
-              <img src={hero2} alt="Joy Egbu" />
+              <img src={Founder2} alt="Joy Egbu" />
               <div className="team-card-content">
                 <h3 className="font-bold text-lg">JOY EGBU</h3>
                 <p className="text-gray-600">CPO - Chief Product Officer</p>
               </div>
             </div>
             <div className="team-card">
-              <img src={hero3} alt="Sonia Usiwo" />
+              <img src={Founder3} alt="Sonia Usiwo" />
               <div className="team-card-content">
                 <h3 className="font-bold text-lg">SONIA USIWO</h3>
                 <p className="text-gray-600">COO - Chief Operating Officer</p>
