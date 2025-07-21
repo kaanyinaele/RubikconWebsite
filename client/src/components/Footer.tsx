@@ -30,7 +30,7 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Socials</h4>
             <div className="space-y-2 text-sm text-gray-400">
               <p><a href="https://x.com/Rubiconconsult" className="hover:text-white transition-colors" target="_blank">Twitter/X</a></p>
-              <p><a href="  #" className="hover:text-white transition-colors">Instagram</a></p>
+              <p><a href="https://www.instagram.com/rubikconnexus" className="hover:text-white transition-colors" target="_blank">Instagram</a></p>
               <p><a href="https://www.linkedin.com/company/rubicon-consults/posts/?feedView=all" className="hover:text-white transition-colors" target="_blank">LinkedIn</a></p>
               <p><a href="https://discord.gg/CAaEHuf3" className="hover:text-white transition-colors" target="_blank">Discord</a></p>
             </div>

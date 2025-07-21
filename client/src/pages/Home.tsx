@@ -6,14 +6,9 @@ import { HeroSection } from "@/components/HeroSection";
 import Founder1 from "@/assets/images/Founder1.jpeg";
 import Founder2 from "@/assets/images/Founder2.jpg";
 import Founder3 from "@/assets/images/Founder3.jpg";
-import hero1 from "@/assets/images/hero-1.jpg";
-import hero2 from "@/assets/images/hero-2.jpg";
-import hero3 from "@/assets/images/hero-3.jpg";
-
-
-import blog1 from "@/assets/images/blog1.png";
+import CTO from "@/assets/images/CTO.jpg";
 import blog2 from "@/assets/images/blog2.png";
-import blog3 from "@/assets/images/blog3.jpg";
+
 
 export default function Home() {
   return (
@@ -319,33 +314,67 @@ export default function Home() {
                 About Rubikcon
               </span>
               <h2 className="text-4xl font-bold mt-4">
-                Meet the Team Leads & Officers
+                Meet the Team Leads 
               </h2>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="team-card">
-              <img src={Founder1} alt="Ozioma Onukogu" />
-              <div className="team-card-content ">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <a 
+              href="https://www.linkedin.com/in/oziomaonukogu/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block hover:scale-105 transition-all duration-300 team-card cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-yellow-500/20 rounded-lg overflow-hidden"
+            >
+              <img src={Founder1} alt="Ozioma Onukogu" className="w-full h-auto" />
+              <div className="team-card-content p-4">
                 <h3 className="font-bold text-lg">OZIOMA ONUKOGU</h3>
-                <p className="text-gray-600">CEO - Chief Executive Officer</p>
+                <p className="text-gray-600">Chief Executive Officer</p>
               </div>
-            </div>
-            <div className="team-card">
-              <img src={Founder2} alt="Joy Egbu" />
-              <div className="team-card-content">
+            </a>
+
+
+
+            <a 
+              href="https://www.linkedin.com/in/joy-egbu/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block hover:scale-105 transition-all duration-300 team-card cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-yellow-500/20 rounded-lg overflow-hidden"
+            >
+              <img src={Founder2} alt="Joy Egbu" className="w-full h-auto" />
+              <div className="team-card-content p-4">
                 <h3 className="font-bold text-lg">JOY EGBU</h3>
-                <p className="text-gray-600">CPO - Chief Product Officer</p>
+                <p className="text-gray-600">Chief Product Officer</p>
               </div>
-            </div>
-            <div className="team-card">
-              <img src={Founder3} alt="Sonia Usiwo" />
-              <div className="team-card-content">
+            </a>
+
+            <a 
+              href="https://www.linkedin.com/in/usiwosonia/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block hover:scale-105 transition-all duration-300 team-card cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-yellow-500/20 rounded-lg overflow-hidden"
+            >
+              <img src={Founder3} alt="Sonia Usiwo" className="w-full h-auto" />
+              <div className="team-card-content p-4">
                 <h3 className="font-bold text-lg">SONIA USIWO</h3>
-                <p className="text-gray-600">COO - Chief Operating Officer</p>
+                <p className="text-gray-600">Chief Operating Officer</p>
               </div>
-            </div>
+            </a>
+
+            <a 
+              href="https://www.linkedin.com/in/naele/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block hover:scale-105 transition-all duration-300 team-card cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-yellow-500/20 rounded-lg overflow-hidden"
+            >
+              <img src={CTO} alt="Uche David" className="w-full h-auto" />
+              <div className="team-card-content p-4">
+                <h3 className="font-bold text-lg">UCHE DAVID</h3>
+                <p className="text-gray-600">Chief Technology Officer</p>
+              </div>
+            </a>
+
+            
           </div>
         </div>
       </div>

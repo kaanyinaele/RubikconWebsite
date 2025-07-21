@@ -21,7 +21,13 @@ export function Navigation() {
   };
 
   return (
-    <nav className="bg-black/90 backdrop-blur-sm w-full z-50">
+    <nav className=" fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-sm w-full z-50">
+      <div className=" bg-gradient-to-r from-yellow-500 to-orange-500 text-black py-2 px-4 text-center text-sm">
+        We have a collection of Games available -{" "}
+        <a href="#" className="underline font-semibold hover:text-gray-800 transition-colors">
+          Visit our Game Shop
+        </a>
+      </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="flex items-center space-x-2">

@@ -76,7 +76,29 @@ export function HeroSection() {
           </div>
 
           <div className="bg-yellow-400/10 backdrop-blur-md shadow-lg rounded-2xl px-8 py-4 border border-yellow-400/30">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-yellow-300">Web3</h1>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-yellow-300">
+              <span className="particle-text">
+                {'RUBIKCON'.split('').map((char, index) => {
+                  const tx = `${Math.random() * 200 - 100}px`;
+                  const ty = `${Math.random() * 200 - 100}px`;
+                  return (
+                    <span 
+                      key={index} 
+                      className="particle-char inline-block"
+                      style={{
+                        '--tx': tx,
+                        '--ty': ty,
+                        opacity: 0,
+                        display: 'inline-block',
+                        willChange: 'transform, opacity'
+                      } as React.CSSProperties}
+                    >
+                      {char}
+                    </span>
+                  );
+                })}
+              </span>
+            </h1>
           </div>
 
           <div className="flex items-center text-yellow-400/80">
@@ -92,8 +114,8 @@ export function HeroSection() {
         <p className="mt-8 max-w-xl text-lg text-gray-300">
           Our end-to-end services include ideation, strategy, product development, and education - helping businesses seize the decentralized future with our scalable web3 solutions
         </p>
-        <Button asChild className="mt-8 bg-yellow-400 text-black hover:bg-yellow-500 rounded-lg px-8 py-3 font-semibold text-lg btn-glow-hover">
-          <Link href="/learn-more">Learn More -&gt;</Link>
+        <Button asChild className=" hover:scale-105 transition-all duration-300 mt-8 bg-yellow-400 text-black hover:bg-yellow-500 rounded-lg px-8 py-3 font-semibold text-lg btn-glow-hover">
+          <Link href="/learn-more">Learn More</Link>
         </Button>
       </div>
     </div>
